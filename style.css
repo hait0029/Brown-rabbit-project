@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+    padding: 0;
+}
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+/*This is a css for the whole header*/
+.header {
+  width: 100vw;
+  height: 25%;
+  position: absolute;
+  top:0;
+  background-color: black;
+}
+/*This is a css for header top which is placed behind the logo, search and the navbar*/
+.header-top {
+  height: 50%;
+  width: 100%;
+  background-color: cyan;
+  display: flex;
+  flex-direction: row;
+}
+/*This is a css for the box behind the logo*/
+.header-top-left {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  background-color: black;
+}
+/*This is a css for the logo*/
+.header-top-left img {
+    padding: 20px;
+    
+}
+/*this box is placed behind the search bar and navbar*/
+.header-top-right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: cyan;
+  
+}
+/*This css is for AboutUs Because i made a link to it*/
+.header-top-right a{
+  color: white;
+  text-decoration: none;  
+}
+
+/*This css is for the div is for*/
+.header-top-right-nav {
+  color: white;
+  height: 50%;
+  width: 100%;
+  background-color: black;
+
+}
+/*This css is for navbar the only part that have a connection to something is AboutUs*/
+.header-top-right-nav ul {
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+  gap: 5%;
+  list-style-type: none;
+  float:right;
+  font-size: 150%;
+}
+
+/*This css is for the logos next to searchbar*/
+.header-top-right-search img{
+  
+  
+  padding-left: 1%;
+  
+}
+
+/*this the container have placed behind the image slider*/
+.container-fluid {
+  width: 75%;
+  height: 100%;
+  background-color: black;
+  position: relative;
+  top: 150px;
+  z-index: 96;
+  margin: auto;
+  
+  overflow: hidden;
+  background: none;
+  
+}
+
+
+/*display for images */
+.images {  
+  display:none;  
+} 
+
+/*size for images*/
+  .images img {  
+      width: 100%;
+      height: 900px;
+    
+  }  
+
+/*this css is for arrows that are used for the sliders*/
+.left, .right {  
+  cursor: pointer;  
+  position: absolute;  
+  top: 50%;  
+  width: auto;  
+  padding: 16px;  
+  margin-top: -22px;  
+  color: white;  
+  font-weight: bold;  
+  font-size: 18px;  
+  transition: 0.6s ease;  
+  border-radius: 0 3px 3px 0;  
+}  
+
+/*right and left are used for arrow placement*/
+.right {  
+  right: 0;  
+  border-radius: 3px 0 0 3px;  
+}  
+.left{
+left: 0;
+border-radius: 3px 0 0 3px;  
+}
+
+
+
+/*search bar size and background color*/
+.header-top-right-search {
+  width: 100%;
+  height: 50%;
+  background-color: black;
+}
+
+
+
+
+/*This for the text inside the box*/
+.Writing-in-box h1{
+  background-color: black;
+  position: absolute;
+  top: 65%;
+  left: 20%;
+  color: white;
+  z-index: 99;
+  padding: 3%;
+  font-size: 300%;
+  font-weight: 100;
+  }
+
+  /*this css is for the Readmore buttons for */
+  button{
+    padding: 10px;
+    background-color: black;
+    color: whitesmoke;
+    border: solid 2px brown ;
+    border-radius: 20%;
+  }
+
+
+
+
+  /*background color for arrows everytime you hover*/
+  .left:hover, .right:hover {  
+      background-color: rgba(115, 115, 115, 0.8);  
+  }  
+
+
+
+
+
+/*css for features, this class have all the articals inside of it*/
+.features{
+  transform:translateY(100%);
+  width: 100%;
+	float: left;
+	padding:30px 15px;
+}
+/*css for the gallery*/
+.features .gallery-items .item{
+  float: left;
+	width:25%;
+	position: relative;
+}
+/*css to hide all other gallery so they can orginized*/
+.features .gallery-items .item.hide{
+	display: none;
+}
+.features .gallery-items .item.show{
+	display: block;
+	animation: show .5s ease;
+}
+
+
+/*Another css for gallery items for postition*/
+.features .gallery-items{
+  float: left;
+	width:100%;
+  position: relative;
+
+}
+/*css to customize border around the images and make them round*/
+.features .gallery-items .item img{
+  border: 1px solid brown;
+  border-radius: 50%;
+  box-shadow: brown 0 0 10px;
+  text-align: center;
+	display: block;
+  margin-left: 75%;
+}
+/*this is for the box underneath the images that have text in it*/
+.features .gallery-items .item .caption{
+  position:relative;
+  left: 47%;
+  background-color:rgba(0, 0, 0, .5);
+  padding: 10px;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+}
+
+/*for pagination system*/
+.features .pagination {
+  width: 100%;
+	float: left;
+  position:absolute;
+	text-align: center;
+  top: 125%;
+}
+
+.features .pagination div {
+  display: inline-block;
+	margin:0 10px;
+}
+/*color for the word page*/
+.features .pagination .page{
+  color:gray;
+}
+/*prev and next customize*/
+.features .pagination .prev,.features .pagination .next{
+  color:#000;
+  border:1px solid #000;
+  font-size:15px;
+  padding:7px 15px;
+  cursor: pointer;
+}
+
+/*this effect is for if the pagination runs to a deadend it will show that there is no more pages */
+.features .pagination .prev.disabled,
+.pagination .next.disabled{
+	border-color: gray;
+	color:gray;
+	pointer-events: none;
+}
+
+/*Sponser-Section placement*/
+.Sponsers-Section{
+  transform: translateY(550%);
+  width: 100%;
+	float: left;
+	padding:30px;
+  
+}
+/*Sponser-Section text*/
+.Sponsers-Section h1{
+  text-align: center;
+  padding: 10px;
+}
+
+/*these Sponsers-Sections are for images and placement of them*/
+.Sponsers-Section .Column{
+  float: left;
+	width: 30%;
+  position: absolute; 
+}
+
+.Sponsers-Section .Column .Column-Items{
+  float: left;
+	width:25%;
+	
+}
+
+.Sponsers-Section .Column .Column-Items img{
+  
+	display: block;
+  margin-left: 500%;
+}
+
+/*placement for footer and background color*/
+.Footer{
+  position: absolute;
+  margin-top: 100%;
+  
+	
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  top: 1;
+  
+  /*background-color: red;*/
+
+}
+/*Costumizing for footers top just like the header top*/
+.footer-top {
+  height: 50%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-top-left{
+  width: 50%;
+  height: 100%;
+  position: relative;
+  background-color: black;
+  padding-top: 40px;
+}
+
+.footer-top-right{
+  width: 100%;
+  flex-direction: column;
+  height: 100%;
+  background-color: black;
+}
+/*logo placement*/
+.footer-top-right-image{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+.footer-top-right-image img{
+position:relative;
+  left: 30%;
+  padding-left: 1%;
+  padding-top: 5%;
+}
+
+/*contact section in the footer*/
+.footer-bottom-right-contact{
+  float: right;
+  color: white;
+  height: 100%;
+  width: 50%;
+  background-color: black;
+  
+}
+/*customizing the text inside contact*/
+.footer-bottom-right-contact ul {
+  width: 50%;
+  display:flex;
+  flex-direction: column;
+  left: 35%;
+  list-style-type: none;
+  gap: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 150%;
+  position: relative;
+  font-weight: 100;
+}
+.footer-bottom-right-contact h1{
+  font-weight: 800;
+}
+.footer-bottom-right-contact h3{
+  font-weight: 300;
+}
+
+/*About section in the footer*/
+.footer-bottom-left-About{
+  position: absolute;
+  left: 0px;
+  color: white;
+  height: 50%;
+  width: 34%;
+  background-color: black;
+}
+/*customizing text in about section*/
+.footer-bottom-left-About h1{
+  font-weight: 800;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-bottom-left-About h3{
+  font-weight: 300;
+  flex-direction: column;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/*instagram pics in the footers center*/
+.footer-bottom-center-instagramfeed{
+  float: left;
+  color: white;
+  height: 100%;
+  width: 50%;
+  background-color: black;
+}
+
+
+.footer-bottom-center-instagramfeed h1{
+  font-weight: 300;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+.footer-bottom-center-instagramfeed img{
+  padding:1%;
+  width: 15%;
+}
+
+
+
+
+/* Fading animation for the articals everytime you next or prev it give a fading animation*/  
+.fade {  
+  -webkit-animation-name: fade;  
+  -webkit-animation-duration: 1.5s;  
+  animation-name: fade;  
+  animation-duration: 1.5s;  
+  }  
+  @-webkit-keyframes fade {  
+  from {  
+    opacity: .4  
+  }  
+  to {  
+    opacity: 1  
+  }  
+  }  
+  
+  @keyframes fade {  
+  from {  
+    opacity: .4  
+  }  
+  to {  
+    opacity: 1  
+  }  
+  } 
+
+  @keyframes show{
+    0%{
+    	opacity:0;
+    	transform: scale(0.9);
+    }
+    100%{
+    	opacity:1;
+    	transform: scale(1);
+    }
+  }

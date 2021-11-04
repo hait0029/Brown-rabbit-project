@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
+    
+</head>
+<body>
+  <!--Header class creation-->
+   <div class="header">
+     <div class="header-top">
+      <div class="header-top-left">
+        <img src="images/logo-white.png">
+   
+      </div>
+      <div class="header-top-right">
+        <div class="header-top-right-search">
+          <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+          <img src="/Icons/linkedin-white.svg" alt="">
+        <img src="/Icons/twitter-white.svg" alt="">
+        <img src="/Icons/instagram-white.svg" alt="">
+        <img src="/Icons/facebook-white.svg" alt="">
+      
+          <br>
+         
+          
+        </div>
+   
+        
+        <div class="header-top-right-nav">
+          <ul class="navigation">
+            <a href="#C1"><p><li>AboutUs</li></p></a>
+            <p><li>Events</li></p>
+            <p><li>NordicRoaster</li></p>
+            <p><li>Results</li></p>
+            <p><li>Links</li></p>
+            <p><li>Contact</li></p>
+        </ul>
+        </div>
+      </div>
+     </div>
+   </div>
+
+   <!--Box Writing infront of images slider-->
+   <div class="Writing-in-box">
+     <h1>“To create an evironment in which knowledge <br> about coffee and its sphere can be obtained”</h1>
+   </div>
+
+   <!--This Container include the 3 images that are inside the slider-->
+   <div class="container-fluid">
+     <div class="images">
+        <img src="images/top view.jpg" />  
+        
+    </div>  
+    <div class="images">  
+        <img src="images/pouring coffee cream.jpg"/>  
+        
+    </div>  
+
+    <div class="images">  
+        <img src="images/cheers.jpg"/> 
+        
+    </div>  
+    <!-- Navigation arrows -->  
+    <a class="left" onclick="nextSlide(-1)">❮</a>  
+    <a class="right" onclick="nextSlide(1)">❯</a>  
+</div>
+
+<!--In this feartures section i made the artical, 
+  there is 15 articals in total and i made sure you can go back and forth with pages,
+   if you want to go to the main from any articals you just press on the site logo on top of the page-->
+<section class="features">
+  <div class="gallery-items">
+  <div class="item">
+    <img src="images/Post thumbnail-1.png" alt="gallery" />
+    
+    <div class="caption">
+      <!--<h1 id="C1">Wonderful Copenhagen 2021</h1>-->
+      <h1>Wonderful Copenhagen 2021</h1>
+      <p> ipsum dolor sit amet consectetur adipisicing elit. Possimus nemo labore laborum. Blanditiis eos quo amet dolorem corporis id dolores temporibus, cumque totam voluptates architecto officia libero enim nesciunt asperiores!</p>
+      
+    </figure>
+    <button onclick="window.location.href='Artical Pages/Artical 1.html'">Readmore</button>
+    </div>
+  </div>
+
+  <div class="item">
+    <img src="images/Post thumbnail-2.png" alt="gallery" />
+    <div class="caption">
+      <h1 id="C2">The most expensive coffee on the market</h1>
+      <p> ipsum dolor sit amet consectetur adipisicing elit. Possimus nemo labore laborum. Blanditiis eos quo amet dolorem corporis id dolores temporibus, cumque totam voluptates architecto officia libero enim nesciunt asperiores!</p>
+      <button onclick="window.location.href='Artical Pages/Artical 2.html'">Readmore</button>
+    </div>
+  </div>
+
+  <div class="item">
+    <img src="images/Post thumbnail-3.png" alt="gallery" />
+    <div class="caption">
+      <h1 id="C3">10 type of coffee beans you need to know</h1>
+      <p> ipsum dolor sit amet consectetur adipisicing elit. Possimus nemo labore laborum. Blanditiis eos quo amet dolorem corporis id dolores temporibus, cumque totam voluptates architecto officia libero enim nesciunt asperiores!</p>
+    
+    <button onclick="window.location.href='Artical Pages/Artical 3.html'">Readmore</button>
+  </div>
+  </div>
+
+
+  <div class="item">
+    <img src="images/Post thumbnail-4.png" alt="gallery" />
+    <div class="caption">
+      <h1 id="C4">callenge your barista skills</h1>
+      <p> ipsum dolor sit amet consectetur adipisicing elit. Possimus nemo labore laborum. Blanditiis eos quo amet dolorem corporis id dolores temporibus, cumque totam voluptates architecto officia libero enim nesciunt asperiores!</p>
+    
+    <button onclick="window.location.href='Artical Pages/Artical 4.html'">Readmore</button>
+  </div>
+  </div>
+
+  <div class="item">
+    <img src="images/Post thumbnail-5.jpg" alt="gallery" />
+    <div class="caption">
+      <h1 id="C5">Wonderful Copenhagen 2022</h1>
+      <p> ipsum dolor sit amet consectetur adipisicing elit. Possimus nemo labore laborum. Blanditiis eos quo amet dolorem corporis id dolores temporibus, cumque totam voluptates architecto officia libero enim nesciunt asperiores!</p>
+  
+    <button onclick="window.location.href='Artical Pages/Artical 5.html'">Readmore</button>
+  </div>
+  </div>
+
+  <div class="item">
+    <img src="images/Post thumbnail-6.jpg" alt="gallery" />
+    <div class="caption">
+      <h1 id="C6">Wonderful Copenhagen 2023</h1>
+      <p> ipsum dolor sit amet consectetur adipisicing elit. Possimus nemo labore laborum. Blanditiis eos quo amet dolorem corporis id dolores temporibus, cumque totam voluptates architecto officia libero enim nesciunt asperiores!</p>
+    
+    <button onclick="window.location.href='Artical Pages/Artical 6.html'">Readmore</button>
+  </div>
+  </div>
+  <div class="item">
+    <img src="images/Post thumbnail-7.jpg" alt="gallery" />
+    <div class="caption">
+      <h1 id="C7">Wonderful Copenhagen 2024</h1>
+      <p> ipsum dolor sit amet consectetur adipisicing elit. Possimus nemo labore laborum. Blanditiis eos quo amet dolorem corporis id dolores temporibus, cumque totam voluptates architecto officia libero enim nesciunt asperiores!</p>
+    
+    <button onclick="window.location.href='Artical Pages/Artical 7.html'">Readmore</button>
+  </div>
+  </div>
+
+  <div class="item">
+    <img src="images/Post thumbnail-8.jpg" alt="gallery" />
+    <div class="caption">
+      <h1 id="C8">Wonderful Copenhagen 2025</h1>
+      <p> ipsum dolor sit amet consectetur adipisicing elit. Possimus nemo labore laborum. Blanditiis eos quo amet dolorem corporis id dolores temporibus, cumque totam voluptates architecto officia libero enim nesciunt asperiores!</p>
+  
+    <button onclick="window.location.href='Artical Pages/Artical 8.html'">Readmore</button>
+  </div>
+  </div>
+
+  <div class="item">
+    <img src="images/Post thumbnail-9.jpg" alt="gallery" />
+    <div class="caption">
+      <h1 id="C9">Wonderful Copenhagen 2026</h1>
+      <p> ipsum dolor sit amet consectetur adipisicing elit. Possimus nemo labore laborum. Blanditiis eos quo amet dolorem corporis id dolores temporibus, cumque totam voluptates architecto officia libero enim nesciunt asperiores!</p>
+  
+    <button onclick="window.location.href='Artical Pages/Artical 9.html'">Readmore</button>
+  </div>
+  </div>
+
+  <div class="item">
+    <img src="images/Post thumbnail-10.jpg" alt="gallery" />
+    <div class="caption">
+      <h1 id="C10">Wonderful Copenhagen 2027</h1>
+      <p> ipsum dolor sit amet consectetur adipisicing elit. Possimus nemo labore laborum. Blanditiis eos quo amet dolorem corporis id dolores temporibus, cumque totam voluptates architecto officia libero enim nesciunt asperiores!</p>
+    
+    <button onclick="window.location.href='Artical Pages/Artical 10.html'">Readmore</button>
+  </div>
+  </div>
+
+  <div class="item">
+    <img src="images/Post thumbnail-11.jpg" alt="gallery" />
+    <div class="caption">
+      <h1 id="C11">Wonderful Copenhagen 2028</h1>
+      <p> ipsum dolor sit amet consectetur adipisicing elit. Possimus nemo labore laborum. Blanditiis eos quo amet dolorem corporis id dolores temporibus, cumque totam voluptates architecto officia libero enim nesciunt asperiores!</p>
+    
+    <button onclick="window.location.href='Artical Pages/Artical 11.html'">Readmore</button>
+  </div>
+  </div>
+  <div class="item">
+    <img src="images/Post thumbnail-12.jpg" alt="gallery" />
+    <div class="caption">
+      <h1 id="C12">Wonderful Copenhagen 2029</h1>
+      <p> ipsum dolor sit amet consectetur adipisicing elit. Possimus nemo labore laborum. Blanditiis eos quo amet dolorem corporis id dolores temporibus, cumque totam voluptates architecto officia libero enim nesciunt asperiores!</p>
+    
+    <button onclick="window.location.href='Artical Pages/Artical 12.html'">Readmore</button>
+  </div>
+</div>
+
+  <div class="item">
+    <img src="images/Post thumbnail-13.jpg" alt="gallery" />
+    <div class="caption">
+      <h1 id="C13">Wonderful Copenhagen 2030</h1>
+      <p> ipsum dolor sit amet consectetur adipisicing elit. Possimus nemo labore laborum. Blanditiis eos quo amet dolorem corporis id dolores temporibus, cumque totam voluptates architecto officia libero enim nesciunt asperiores!</p>
+    
+    <button onclick="window.location.href='Artical Pages/Artical 13.html'">Readmore</button>
+  </div>
+  </div>
+
+  <div class="item">
+    <img src="images/Post thumbnail-14.jpg" alt="gallery" />
+    <div class="caption">
+      <h1 id="C14">Wonderful Copenhagen 2031</h1>
+      <p> ipsum dolor sit amet consectetur adipisicing elit. Possimus nemo labore laborum. Blanditiis eos quo amet dolorem corporis id dolores temporibus, cumque totam voluptates architecto officia libero enim nesciunt asperiores!</p>
+  
+    <button onclick="window.location.href='Artical Pages/Artical 14.html'">Readmore</button>
+  </div>
+  </div>
+  <div class="item">
+    <img src="images/Post thumbnail-15.jpg" alt="gallery" />
+    <div class="caption">
+      <h1 id="C15">Wonderful Copenhagen 2032</h1>
+      <p> ipsum dolor sit amet consectetur adipisicing elit. Possimus nemo labore laborum. Blanditiis eos quo amet dolorem corporis id dolores temporibus, cumque totam voluptates architecto officia libero enim nesciunt asperiores!</p>
+    
+    <button onclick="window.location.href='Artical Pages/Artical 15.html'">Readmore</button>
+  </div>
+  </div>
+</div>
+
+    <div class="pagination">
+      <div class="prev">Prev</div>
+      <div class="page">Page <span class="page-num"></span></div>
+      <div class="next">Next</div>
+    </div>
+  </div>
+</section>
+
+<!--This is my Sponsers section where all the sponsers are-->
+<div class="Sponsers-Section">
+  <h1>Nordic Barista cup sponsers</h1>
+  <div class="Column">
+    
+    <div class="Column-Items">
+      
+    <img src="/Sponsers/sponsor-1.png" alt="">
+  </div>
+    <div class="Column-Items">
+      <img src="/Sponsers/sponsor-2.png" alt="">
+    </div>
+      <div class="Column-Items">
+        <img src="/Sponsers/sponsor-3.png" alt="">
+      </div>
+      <div class="Column-Items">
+        <img src="/Sponsers/sponsor-4.png" alt="">
+      </div>
+        <div class="Column-Items">
+          <img src="/Sponsers/sponsor-5.png" alt="">
+        </div>
+          <div class="Column-Items">
+            <img src="/Sponsers/sponsor-6.png" alt="">
+          </div>
+          <div class="Column-Items">
+            <img src="/Sponsers/sponsor-7.png" alt="">
+          </div>
+            <div class="Column-Items">
+              <img src="/Sponsers/sponsor-8.png" alt="">
+            </div>
+              <div class="Column-Items">
+                <img src="/Sponsers/sponsor-9.png" alt="">
+              </div>
+              <div class="Column-Items">
+                <img src="/Sponsers/sponsor-10.png" alt="">
+              </div>
+                <div class="Column-Items">
+                  <img src="/Sponsers/sponsor-11.png" alt="">
+                </div>
+                  <div class="Column-Items">
+                    <img src="/Sponsers/sponsor-12.png" alt="">
+                  </div>
+                  <div class="Column-Items">
+                    <img src="/Sponsers/sponsor-13.png" alt="">
+                  </div>
+                    <div class="Column-Items">
+                      <img src="/Sponsers/sponsor-14.png" alt="">
+                    </div>
+                      <div class="Column-Items">
+                        <img src="/Sponsers/sponsor-15.png" alt="">
+                      </div>
+                      <div class="Column-Items">
+                        <img src="/Sponsers/sponsor-16.png" alt="">
+                      </div>
+                        <div class="Column-Items">
+                          <img src="/Sponsers/sponsor-17.png" alt="">
+                        </div>
+                          <div class="Column-Items">
+                            <img src="/Sponsers/sponsor-18.png" alt="">
+                          </div>
+                          <div class="Column-Items">
+                            <img src="/Sponsers/sponsor-19.png" alt="">
+                          </div>
+                            <div class="Column-Items">
+                              <img src="/Sponsers/sponsor-20.png" alt="">
+                            </div>
+                              <div class="Column-Items">
+                                <img src="/Sponsers/sponsor-40.png" alt="">
+                              </div>
+                              <div class="Column-Items">
+                                <img src="/Sponsers/sponsor-41.png" alt="">
+                              </div>
+</div>
+
+
+
+</div>
+
+<!--Footer class creation-->
+<div class="Footer">
+  <div class="footer-top">
+    <div class="footer-top-left">
+      <img src="/images/logo-white.png" alt="">
+    </div>
+      <div class="footer-top-right">
+        <div class="footer-top-right-image">
+        <img src="/Icons/linkedin-white.svg" alt="">
+        <img src="/Icons/twitter-white.svg" alt="">
+        <img src="/Icons/instagram-white.svg" alt="">
+        <img src="/Icons/facebook-white.svg" alt="">
+      </div>
+      <div class="footer-bottom-right-contact">
+        <ul class="Contact">
+          <h1>Contact</h1>
+          <h3>World Barista Cup</h3>
+          <a><li>Amagertorv 13</li></a>
+          <a><li>1160 Copenhagen K</li></a>
+          <a><li>+45 xx xx xx xx</li></a>
+          <a><li>CVR: xxxxxxxx</li></a>
+          <a><li>Email: xxxx@Worldbaristacup.com</li></a>
+          
+      </ul>
+    </div>
+    <div class="footer-bottom-left-About">
+      <h1 id="C1">About World Barista Cup</h1>
+      <br>
+          <p>The vision within The World Barista Cup</p>
+          <br>
+      <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus nemo earum sed odit omnis excepturi modi animi in dicta ut? Iste, corporis dignissimos. Praesentium placeat, odit quidem illo veritatis voluptatem.</h3>
+    </div>
+    <div class="footer-bottom-center-instagramfeed">
+      <h1>Instagram feed</h1>
+      <br>
+      <img src="/Instagramfeed/instagram-image-1.png" alt="">
+      <img src="/Instagramfeed/instagram-image-2.png" alt="">
+      <img src="/Instagramfeed/instagram-image-3.png" alt="">
+      <br>
+      <img src="/Instagramfeed/instagram-image-4.png" alt="">
+      <img src="/Instagramfeed/instagram-image-5.png" alt="">
+      <img src="/Instagramfeed/instagram-image-6.png" alt="">
+      <br>
+      <img src="/Instagramfeed/instagram-image-7.png" alt="">
+      <img src="/Instagramfeed/instagram-image-8.png" alt="">
+      <img src="/Instagramfeed/instagram-image-9.png" alt="">
+    </div>
+      </div>
+</div>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
